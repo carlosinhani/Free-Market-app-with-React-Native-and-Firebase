@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';
+import logo from '../../../assets/logo.png';
+import Button from '../../components/Button';
 
 export default function Home(){
   return( 
       <View style={styles.container}>
-          <Text>Home</Text>
+          <Image source={logo} />
+          <Button style='outline'><Text>Aperte</Text></Button>
+          <Button><Text>Aperte</Text></Button>
       </View>
     );
 }
