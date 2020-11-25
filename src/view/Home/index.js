@@ -4,12 +4,14 @@ import styles from './styles';
 import logo from '../../../assets/logo.png';
 import Button from '../../components/Button';
 
-export default function Home(){
+export default function Home({ navigation }){
   return( 
       <View style={styles.container}>
           <Image source={logo} />
-          <Button style='outline'><Text>Aperte</Text></Button>
-          <Button><Text>Aperte</Text></Button>
+          <Button style='outline' onPress={() => navigation.navigate('Login')}>
+            <Text style={styles.text_black}>ENTRAR</Text>
+          </Button>
+          <Button><Text style={styles.text_white}>CRIAR CONTA</Text></Button>
       </View>
     );
 }
