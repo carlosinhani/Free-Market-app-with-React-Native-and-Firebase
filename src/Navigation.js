@@ -5,6 +5,7 @@ import Home from "./view/Home";
 import Login from "./view/Login";
 import Signup from "./view/Signup";
 import RedefinePass from "./view/RedefinePass";
+import Index from "./view/Index";
 
 const Stack = createStackNavigator()
 
@@ -27,6 +28,11 @@ export default function Navigation(){
                 <Stack.Screen
                     name="RedefinePass"
                     component={RedefinePass}
+                />
+                <Stack.Screen
+                    name="Index"
+                    component={Index}
+                    options={{ headerShown: false }}
                 />
             </Stack.Navigator>  
         </NavigationContainer>
