@@ -9,6 +9,12 @@ import Index from "./view/Index";
 
 const Stack = createStackNavigator()
 
+const optionsHeader = () => ({
+    headerStyle: {
+        backgroundColor: "#ffe600",
+    }
+})
+
 export default function Navigation(){
     return(
         <NavigationContainer>
@@ -16,18 +22,22 @@ export default function Navigation(){
                 <Stack.Screen
                     name="Home"
                     component={Home}
+                    options={optionsHeader}
                 />
                 <Stack.Screen
                     name="Login"
                     component={Login}
+                    options={optionsHeader}
                 />
                 <Stack.Screen
                     name="Signup"
                     component={Signup}
+                    options={optionsHeader}
                 />
                 <Stack.Screen
                     name="RedefinePass"
                     component={RedefinePass}
+                    options={optionsHeader}
                 />
                 <Stack.Screen
                     name="Index"
