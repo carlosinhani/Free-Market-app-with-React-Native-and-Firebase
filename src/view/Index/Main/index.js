@@ -4,12 +4,9 @@ import styles from './styles';
 
 export default function Main(){
     return (
-       <ScrollView>
+       <View style={styles.container}>
              <Text>Página Principal</Text>
-             {/* <TouchableOpacity onPress={navigation.goBack()}>
-                   <Text>Voltar</Text>
-             </TouchableOpacity> */}
-       </ScrollView>
+       </View>
     );
 }
 

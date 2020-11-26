@@ -3,6 +3,7 @@ import { View, TouchableOpacity, TextInput, Alert } from 'react-native';
 import { createStackNavigator } from "@react-navigation/stack";
 import { FontAwesome5, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 import Main from "../Main";
+import List from "../List";
 import styles from './styles';
 
 
@@ -57,10 +58,15 @@ const optionsHeader = ({ navigation }) => ({
 
 export default function Navigation(){
     return (
-       <Stack.Navigator>
+       <Stack.Navigator initialRouteName="List">
             <Stack.Screen 
                  component={Main}
                  name="Main"
+                 options={optionsHeader}
+            />
+            <Stack.Screen 
+                 component={List}
+                 name="List"
                  options={optionsHeader}
             />
        </Stack.Navigator>

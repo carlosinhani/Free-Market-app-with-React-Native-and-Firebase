@@ -1,10 +1,15 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import logo from '../../../assets/logo.png';
 import Button from '../../components/Button';
 
 export default function Signup(){
+
+  const [user,setUser] = useState()
+  const [user,setPass] = useState()
+  
+
   return( 
       <View style={styles.container}>
           <Image source={logo} />
