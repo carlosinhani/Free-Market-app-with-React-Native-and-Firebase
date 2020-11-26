@@ -20,7 +20,7 @@ export default function Login({navigation}){
                name='user'
                keyboardType='email-address'
                autoCapitalize='none'
-               placeholder='Email'
+               placeholder='Senha'
                style={styles.input} 
           />
           </View>
