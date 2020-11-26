@@ -39,29 +39,43 @@ function Item({ item }) {
 
 const listProduct = [
     {
-        id: '1',
-        name: 'TV',
-        price: 1250.27,
-        condition: 'Novo'
-    },
-    {
         id: '2',
         name: 'PS5',
         price: 4500.00,
-        condition: 'Novo'
+        condition: 'Novo',
+        picture:"https://www.citypng.com/public/uploads/preview/-11591925787cggjhepdvq.png"
+        
+        // picture: "https://www.casasbahia-imagens.com.br/Informatica/Notebook/55006647/1312426042/macbook-air-apple-core-i5-8gb-512gb-ssd-tela-retina-13-3-macos-mvh22bz-a-cinza-espacial-55006647.jpg"
+    },
+    {
+        id: '1',
+        name: 'Smart TV Lg 43',
+        price: 2000.00,
+        condition: 'Novo',
+        picture: "https://mytechshop.lojavirtualfc.com.br/lojas/00035189/prod/ttec017d1.png"
     },
     {
         id: '3',
-        name: 'NOTEBOOK',
-        price: 3000.53,
-        condition: 'Novo'
+        name: 'X-Box series X',
+        price: 3990.90,
+        condition: 'Novo',
+        picture: "https://imagens.canaltech.com.br/produto/1584982530-7573-principal-m.png"
     },
     {
         id: '4',
-        name: 'CELULAR LG ',
-        price: 2100.58,
-        condition: 'Novo'
+        name: 'ASUS VivoBook',
+        price: 3200.50,
+        condition: 'Novo',
+        picture: "https://img.vigiadepreco.com.br/3e/27c/d326/42a1a/3e27cd32642a1a8c602f5e8627a3da6916c1624b7aac1c97947a2eda4a9a7ec9.jpg"
     },
+    {
+        id: '5',
+        name: 'GOD of WAR PS4',
+        price: 150.00,
+        condition: 'Novo',
+        picture: "http://lojasaraiva.vteximg.com.br/arquivos/ids/3966796/1004717197.jpg?v=637048670780800000"
+    }    
+
 ]
 
 export default function List(){

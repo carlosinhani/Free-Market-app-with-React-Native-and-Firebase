@@ -3,6 +3,7 @@ import { View, Text, Image, TextInput, Alert } from 'react-native';
 import styles from './styles';
 import logo from '../../../assets/logo.png';
 import Button from '../../components/Button';
+import firebase from "../../services/firebase";
 
 export default function Signup(){
 
@@ -12,7 +13,14 @@ export default function Signup(){
   async function handleSignup(){
       
     if(user, pass) {
-      Alert.alert('Ok', 'tudo certo')
+      
+      firebase.auth().createUserWithEmailAndPassword(user,pass)
+              .then((response)=>{
+                  Alert.alert('Ok', 'tudo certo')
+              })
+              .catch((erro)=>{
+                 Alert.alert('Ops', 'não foi possivel criar seu cadastro')
+              })   
     } else {
       Alert.alert('Erro', 'Preencher email e senha')
     }
